@@ -14,8 +14,8 @@ redis_url = os.environ['REDISTOGO_URL']
 redis_client = redis.from_url(redis_url)
  
 # App key and secret from the App console (dropbox.com/developers/apps)
-APP_KEY = os.environ['APP_KEY']
-APP_SECRET = os.environ['APP_SECRET']
+APP_KEY = os.environ['i07mla37z7qeobq']
+APP_SECRET = os.environ['r7vmapycr2n96if']
  
 app = Flask(__name__)
 app.debug = True
