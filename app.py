@@ -10,7 +10,7 @@ from flask import abort, Flask, redirect, render_template, request, session, url
 from markdown import markdown
 import redis
  
-redis_url = os.environ['REDISTOGO_URL']
+redis_url = os.environ['redis://:@localhost:6379']
 redis_client = redis.from_url(redis_url)
  
 # App key and secret from the App console (dropbox.com/developers/apps)
