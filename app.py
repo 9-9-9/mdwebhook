@@ -10,12 +10,12 @@ from flask import abort, Flask, redirect, render_template, request, session, url
 from markdown import markdown
 import redis
  
-redis_url = os.environ['redis://redistogo:08f8e80291a2246e569b00f735fe8825@hammerjaw.redistogo.com:9638/']
+redis_url = os.environ['https://tyrant-Ku.herokuapp.com/oauth_callback']
 redis_client = redis.from_url(redis_url)
  
 # App key and secret from the App console (dropbox.com/developers/apps)
-APP_KEY = os.environ['i07mla37z7qeobq']
-APP_SECRET = os.environ['r7vmapycr2n96if']
+APP_KEY = os.environ['b3jv86g8k7pgcib']
+APP_SECRET = os.environ['avxdcmdxpj124g0']
  
 app = Flask(__name__)
 app.debug = True
